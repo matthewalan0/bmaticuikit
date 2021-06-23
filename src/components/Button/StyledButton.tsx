@@ -71,7 +71,6 @@ const StyledButton = styled.button<ButtonProps>`
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: ${getButtonVariantProp("backgroundHover")};
     border-color: ${getButtonVariantProp("borderColorHover")};
-    opacity: ${({ isLoading }) => (isLoading ? 0.25 : 0.5)};
   }
 
   &:focus:not(:active) {
