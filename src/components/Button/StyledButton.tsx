@@ -67,7 +67,7 @@ const StyledButton = styled.button<ButtonProps>`
   padding: ${({ size }) => (size === "sm" ? "0 16px" : "0 24px")};
   transition: background-color 0.2s;
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
-  &:hover:not(:disabled):not(.button--disabled):not(:active) {
+  &:hover {
     opacity: 0.8;
   }
   &:active:not(:disabled):not(.button--disabled) {
