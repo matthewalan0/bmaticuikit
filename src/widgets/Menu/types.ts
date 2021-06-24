@@ -38,6 +38,15 @@ export interface MenuEntry {
   initialOpenState?: boolean;
 }
 
+export interface SocialEntry {
+    label: string;
+    icon: string;
+    items?: MenuSubEntry[];
+    href?: string;
+    calloutClass?: string;
+    initialOpenState?: boolean;
+}
+
 export interface PanelProps {
   isDark: boolean;
   toggleTheme: (isDark: boolean) => void;
